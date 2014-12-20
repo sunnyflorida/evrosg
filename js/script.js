@@ -11,11 +11,11 @@
     });
     $('.building_hover').on('mouseover',function(){
       $('.building_hover').show();
-      $('.strojka').addClass('active');
+      $('.strojka').addClass('active_menu');
     });
     $('.building_hover').on('mouseout',function(){
       $('.building_hover').hide();
-      $('.strojka').removeClass('active');
+      $('.strojka').removeClass('active_menu');
     });
     $('.strojka').on('click',function(){
       $('.building_hover').toggle()
@@ -30,11 +30,11 @@
     });
     $('.metal_hover').on('mouseover',function(){
       $('.metal_hover').show();
-      $('.metal').addClass('active');
+      $('.metal').addClass('active_menu');
     });
     $('.metal_hover').on('mouseout',function(){
       $('.metal_hover').hide();
-      $('.metal').removeClass('active');
+      $('.metal').removeClass('active_menu');
     });
     $('.metal').on('click',function(){
       $('.metal_hover').toggle()
@@ -49,14 +49,27 @@
     });
     $('.iron_hover').on('mouseover',function(){
       $('.iron_hover').show();
-      $('.iron').addClass('active');
+      $('.iron').addClass('active_menu');
     });
     $('.iron_hover').on('mouseout',function(){
       $('.iron_hover').hide();
-      $('.iron').removeClass('active');
+      $('.iron').removeClass('active_menu');
     });
     $('.iron').on('click',function(){
       $('.iron_hover').toggle()
     });
 
+
+    $('.button_on_menu_slider').on('click',function(){
+      $('.menu_slider').toggleClass('menu_area_expanded');
+    });
+    
+
+});
+
+
+$(document).ready(function() {
+  $("a.fancy_prod").fancybox({              
+    });
+  
 });
