@@ -60,7 +60,7 @@
     });
 
 
-    $('.button_on_menu_slider').on('click',function(){
+    $('.button_on_menu_slider').on('mouseover',function(){
       $('.menu_slider').toggleClass('menu_area_expanded');
     });
     
