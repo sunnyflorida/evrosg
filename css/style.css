@@ -157,9 +157,19 @@ header .phone_wrapper small {
 .container-fluid > .navbar-collapse {
 	margin: 0;
 }
-/*.home_link {
-	background: url(../img/home.png);
-}*/
+.icon_home a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../img/home2.png') center center no-repeat;
+	margin-top: -7px;
+}
+.active_icon_home a {
+	background: url('../img/home.png') center center no-repeat;
+}
+.nav.navbar-nav li.icon_home a:hover {
+	border-bottom: none;
+}
 @media screen and (max-width: 769px) {
 	.container-fluid > .navbar-header {
 		background-color: rgb(207,228,239);
@@ -970,10 +980,10 @@ footer address p small {
 }
 .menu_area_expanded {
 	width: 100%;
-	-webkit-transition: all 0.7s linear;
-     -moz-transition: all 0.7s linear;
-     -o-transition: all 0.7s linear;
-     transition: all 0.7s linear;
+	-webkit-transition: all 0.3s linear;
+     -moz-transition: all 0.3s linear;
+     -o-transition: all 0.3s linear;
+     transition: all 0.3s linear;
 }
 @media screen and (max-width: 800px) {
 	.menu_area_expanded {
@@ -1370,7 +1380,7 @@ footer address p small {
 }
 .img_wrapper_projecting_stages img {
 	display: block;
-	margin: 40px auto 0;
+	margin: 58px auto 0;
 }
 .projecting_stages span {
 	position: absolute;
@@ -1390,14 +1400,16 @@ footer address p small {
 	font-family: MyriadBold;
 	font-size: 28px;
 }
-
-.projecting_stages figure:hover .img_wrapper_projecting_stages {
+.projecting_stages .img_wrapper_projecting_stages:hover {
+	box-shadow: 0 0 1px  rgb(23,96,211);
+}
+.projecting_stages .pr_done .img_wrapper_projecting_stages {
 	background-color: rgb(23,96,211);
 	box-shadow: 0 0 1px  rgb(23,96,211);
 }
-.projecting_stages figure:hover span {
+/*.projecting_stages figure:hover span {
 	display: none;
-}
+}*/
 
 @media screen and (max-width: 470px) {
 	.projecting_stages > div {
